@@ -78,6 +78,11 @@
     display: block;
 }
 
+.cart-list--empty .cart__order-btn,
+.cart-list--empty .cart-footer {
+    display: none;
+}
+
 .cart-item {
     cursor: default;
     height: 120px;
