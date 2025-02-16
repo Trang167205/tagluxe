@@ -91,13 +91,18 @@ function createToastContainer() {
 function showToast(message, type = 'info') {
     const toastContainer = document.getElementById('toast__container') || createToastContainer();
     const iconClass = getIconClass(type);
+    const headingText = getHeadingText(type);
 
     const toast = document.createElement('div');
     toast.className = `toast toast--${type}`;
     toast.innerHTML = `
-        <i class="toast__icon ${iconClass}"></i>
-        <span class="toast__message">${message}</span>
-        <button class="toast__close"><i class="fa-solid fa-xmark"></i></button>
+            <i class="toast__icon ${iconClass}"></i>
+            <div class="toast__content">
+                <h3 class="toast__heading">${headingText}</h3>
+                <p class="toast__message">${message}</p>
+            </div>
+            <button class="toast__close"><i class="fa-solid fa-xmark"></i></button>
+        
     `;
 
     toast.querySelector('.toast__close').onclick = () => toast.remove();
@@ -116,12 +121,22 @@ function getIconClass(type) {
     return icons[type] || icons.info;
 }
 
+function getHeadingText(type) {
+    const headings = {
+        success: 'Success',
+        error: 'Error',
+        warning: 'Warning',
+        info: 'Information'
+    };
+    return headings[type] || headings.info;
+}
+
 function renderCartItems() {
     const cartItems = document.getElementById('cart-item__list'); // Đảm bảo chọn đúng phần tử
     if (!cartItems) return;
 
-    cartItems.innerHTML = '';  // Xóa các phần tử cũ trong giỏ hàng
-    let totalPrice = 0;  // Tổng tiền giỏ hàng
+    cartItems.innerHTML = '';  
+    let totalPrice = 0;  
 
     cart.forEach(item => {
         const itemElement = document.createElement('div');
@@ -146,20 +161,23 @@ function renderCartItems() {
 
         cartItems.appendChild(itemElement);
 
-        // Tính tổng tiền (quantity * new_price)
         totalPrice += item.new_price * item.quantity;
     });
 
-    // Hiển thị tổng tiền
     const totalPriceElement = document.querySelector('.cart__total-count');
     if (totalPriceElement) {
         totalPriceElement.innerText = totalPrice.toLocaleString() + 'đ';  // Cập nhật tổng tiền
     }
 }
 
-// ⚡ Hàm xóa sản phẩm khỏi giỏ hàng
 function removeFromCart(id) {
-    cart = cart.filter(item => item.id !== id);
+    const existingProduct = cart.find(item => item.id === id);
+    if (existingProduct) {
+        existingProduct.quantity -= 1;
+        if (existingProduct.quantity <= 0) {
+            cart = cart.filter(item => item.id !== id);
+        }
+    }
     updateCartCount();
     renderCartItems();
 }
