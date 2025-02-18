@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "",
+        "name": "test1",
         "new_price": 20000,
         "old_price": 10000,
         "hot_item": true,
@@ -11,7 +11,7 @@
     },
     {
         "id": 2,
-        "name": "",
+        "name": "test2",
         "new_price": 30000,
         "old_price": 10000,
         "hot_item": true,
@@ -20,8 +20,8 @@
         "img": "https://down-vn.img.susercontent.com/file/sg-11134201-22110-kw9l58efzljv62.webp"
     },
     {
-        "id": 6,
-        "name": "",
+        "id": 3,
+        "name": "test3",
         "new_price": 250000,
         "old_price": 250000,
         "hot_item": true,
@@ -30,8 +30,8 @@
         "img": "https://down-vn.img.susercontent.com/file/sg-11134201-22110-lgs7smwczljvd4.webp"
     },
     {
-        "id": 7,
-        "name": "",
+        "id": 4,
+        "name": "test4",
         "new_price": 150000,
         "old_price": 150000,
         "hot_item": true,
@@ -40,8 +40,8 @@
         "img": "https://down-vn.img.susercontent.com/file/766fbb7d4f3a58e41ea35c4012d09a16.webp"
     },
     {
-        "id": 8,
-        "name": "",
+        "id": 5,
+        "name": "test5",
         "new_price": 100000,
         "old_price": 100000,
         "hot_item": true,
@@ -50,8 +50,8 @@
         "img": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lilnhdiozk7gf7.webp"
     },
     {
-        "id": 9,
-        "name": "",
+        "id": 6,
+        "name": "test6",
         "new_price": 250000,
         "old_price": 250000,
         "hot_item": true,
@@ -60,8 +60,8 @@
         "img": "https://down-vn.img.susercontent.com/file/cn-11134301-7r98o-lo224d98hf2gc2.webp"
     },
     {
-        "id": 10,
-        "name": "",
+        "id": 7,
+        "name": "test7",
         "new_price": 200000,
         "old_price": 200000,
         "hot_item": true,
@@ -70,8 +70,8 @@
         "img": "https://product.hstatic.net/200000667659/product/15357f1b3d5f8701de4e_1abbc46960b64ff0a87dee51ed332746_master.jpg"
     },
     {
-        "id": 11,
-        "name": "",
+        "id": 8,
+        "name": "test8",
         "new_price": 100000,
         "old_price": 100000,
         "hot_item": true,
@@ -80,8 +80,8 @@
         "img": "https://down-vn.img.susercontent.com/file/sg-11134201-7rd6s-lvv5o0h0s9af41.webp"
     },
     {
-        "id": 12,
-        "name": "",
+        "id": 9,
+        "name": "test9",
         "new_price": 120000,
         "old_price": 120000,
         "hot_item": true,
@@ -90,8 +90,8 @@
         "img": "hhttps://down-vn.img.susercontent.com/file/sg-11134201-7rdwq-m0mwsvhzmpkuad.webp"
     },
     {
-        "id": 13,
-        "name": "",
+        "id": 10,
+        "name": "test10",
         "new_price": 140000,
         "old_price": 140000,
         "hot_item": true,
@@ -100,8 +100,8 @@
         "img": "https://down-vn.img.susercontent.com/file/sg-11134201-7rbl7-llc375r8q5ct1b.webp"
     },
     {
-        "id": 14,
-        "name": "",
+        "id": 11,
+        "name": "test11",
         "new_price": 20000,
         "old_price": 20000,
         "hot_item": true,
@@ -110,23 +110,13 @@
         "img": "https://sodaminhchau.com/wp-content/uploads/2017/03/in-day-deo-the-2803-2.jpg"
     },
     {
-        "id": 15,
-        "name": "",
+        "id": 12,
+        "name": "test12",
         "new_price": 12000,
         "old_price": 12000,
         "hot_item": true,
         "new_item": true,
         "best_item": true,
         "img": "hhttps://down-vn.img.susercontent.com/file/vn-11134207-7r98o-luj7xiv6nvola1.webp"
-    },
-    {
-        "id": 17,
-        "name": "",
-        "new_price": 20000,
-        "old_price": 20000,
-        "hot_item": true,
-        "new_item": true,
-        "best_item": true,
-        "img": "https://down-vn.img.susercontent.com/file/sg-11134201-7rdy1-m0mwsuwmjdoi53.webp"
     }
 ]
