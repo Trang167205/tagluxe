@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Thanh Toán</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/modal.css">
+    <link rel="stylesheet" href="../assets/css/fonts/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/checkout.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="checkout-page">
+        <!-- Header -->
+        <section id="header__topbar"></section>
+        <section id="header__sticky"></section>
+
+        <h1 class="checkout__title">Thông tin đơn hàng</h1>
+        <div class="grid">
+            <div class="grid__row">
+                <div class="grid__column-3">
+                    <section id="checkout">
+                        <h2>Thông Tin Giỏ Hàng</h2>
+                        <!-- <h3 class="cart__list-label">Danh sách sản phẩm</h3> -->
+                        <div id="cart-list">
+                            <div id="cart-item__list"></div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="grid__column-3">
+                    <!-- Form nhập thông tin đơn hàng -->
+                    <form id="checkout-form">
+                        <h2 class="checkout__label">Thông tin khách hàng</h2>
+                        <div class="checkout__name">
+                            <label>Họ và Tên:</label>
+                            <input type="text" id="customer-name" placeholder="Nhập họ tên" required>
+                        </div>
+    
+                        <div class="checkout__phone">
+                            <label>Số Điện Thoại:</label>
+                            <input type="tel" id="customer-phone" placeholder="Nhập số điện thoại" required>
+                        </div>
+    
+                        <div class="checkout__address">
+                            <label>Địa Chỉ:</label>
+                            <input type="text" id="customer-address" placeholder="Nhập địa chỉ" required>
+                        </div>
+    
+                        <div class="checkout__shipping-method">
+                            <label>Phương Thức Vận Chuyển:</label>
+                            <select id="shipping-method">
+                                <option value="standard">Giao hàng tiêu chuẩn</option>
+                                <option value="express">Giao hàng nhanh</option>
+                            </select>
+                        </div>
+    
+                        <div class="checkout__payment-method">
+                            <label>Phương Thức Thanh Toán:</label>
+                            <select id="payment-method">
+                                <option value="cod">Thanh toán khi nhận hàng</option>
+                                <option value="bank">Chuyển khoản ngân hàng</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="grid__column-3">
+                    <div class="checkout__detail">
+                        <h2>Thông Tin Chi tiết</h2>
+                        <h3 class="cart-footer">
+                            <p class="cart-footer__title">Tổng:</p>
+                            <span class="cart__total-count">0</span>
+                        </h3>
+                        <button class="cart__order-btn">Gửi đơn hàng</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Footer -->
+        <section id="footer"></section>
+    </div>
+
+    <script src="../assets/js/header-footer.js"></script>
+    <script src="../assets/js/checkout.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
+<!-- 
+Hàng 1: Nhập Tên khách hàng, số điện thoại, địa chỉ
+Hàng 2: Sản phẩm, số lượng,...
+Hàng 3: Phương thức vận chuyển
+Hàng 4: phương thức thanh toán
+Hàng 5: Chi tiết thanh toán: tiền hàng, tiền vận chuyển
+Hàng 6: Nút đặt hàng
+  -->
