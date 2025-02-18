@@ -75,10 +75,6 @@
     height: var(--navbar-height);
 }
 
-.header__nav-logo-link {
-    
-}
-
 .header__nav-logo-img {
     width: 60px;
     height: 60px;
@@ -676,7 +672,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .toast {
