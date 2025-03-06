@@ -20,10 +20,119 @@
 </head>
 
 <body>
+    
     <div id="home-page">
         <!-- Header -->
-        <section id="header__topbar"></section>
-        <section id="header__sticky"></section>
+        <header class="topbar">
+            <!-- Header Top -->
+            <div class="topbar">
+                <div class="grid">
+                    <div class="header__top">
+                        <div class="header__hotline">
+                            <i class="header__hotline-icon fa-solid fa-phone-flip"></i>
+                            <span class="header__hotline-label">Hotline:</span>
+                            <span class="header__hotline-number">
+                                <a href="" class="header__hotline-number-link">0905.450.533</a>
+                            </span>
+                        </div>
+                        <ul class="header__info">
+                            <li class="header__info-item">
+                                <a href="" class="header__info-item-link">Cách chọn Size</a>
+                            </li>
+                            <li class="header__info-item">
+                                <a href="" class="header__info-item-link">Chính sách khách VIP</a>
+                            </li>
+                            <li class="header__info-item">
+                                <a href="" class="header__info-item-link">Giới thiệu</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+                <!-- Sticky Wrapper -->
+        <div id="header__sticky-wrapper">
+            <div class="grid">
+                <div class="header__nav">
+                    <div class="header__nav-logo">
+                        <a href="../index.html" class="header__nav-logo-link">
+                            <img src="../assets/css/img/logo.jpg" alt="" class="header__nav-logo-img">
+                        </a>
+                    </div>
+                    <div class="header__center">
+                        <ul class="header__menu">
+                            <li class="header__menu-item">
+                                <a href="../index.html" class="header__menu-link">Trang chủ</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">Hàng mới về</a>
+                            </li>
+                            <li class="header__menu-item collection">
+                                <a href="" class="header__menu-link collection-link">Bộ sưu tập</a>
+                                <ul class="collection-list header__menu-item">
+                                    <li class="collection-item"><a href="" class="collection-item header__menu-link">Dây đeo</a>
+                                    </li>
+                                    <li class="collection-item"><a href="" class="collection-item header__menu-link">Thẻ tên</a>
+                                    </li>
+                                    <li class="collection-item"><a href="" class="collection-item header__menu-link">Phụ
+                                            kiện</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">Outlet Sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__search">
+                            <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="header__cart">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            <div class="cart-list-container">
+                                <div class="cart-list-wrap">
+                                    <div id="cart-list">
+                                        <h3 class="cart-heading">
+                                            Có
+                                            <span id="cart-count">0</span>
+                                            <span class="cart-heading--highlight">Sản phẩm</span>
+                                            trong giỏ hàng
+                                        </h3>
+                                        <img class="cart-list--empty-img" src="../assets/css/img/empty-cart.webp" alt="">
+                                        <div id="cart-item__list">
+        
+                                            <!-- <div class="cart-item">
+                                                <img class="cart-item-img" src="https://th.bing.com/th/id/R.136c5d6ea7d6149bd72466dbcb0639e5?rik=Qw5Hk9fXu9YIWA&pid=ImgRaw&r=0" alt="">
+                                                <div class="cart-item__wrap">
+                                                    <p class="cart-item__name">Quần Tây Sidetab Gắn Dây 3 Sọc Form Slimfit QT065 Màu Đen</p>
+                                                    <div class="cart-item__body">
+                                                        <div class="cart-item__info">
+                                                            <p class="cart-item__quantity">1</p>
+                                                            <p class="cart-item__multiply">x</p>
+                                                            <p class="cart-item__price">369000</p>
+                                                        </div>
+                                                        <button class="cart-item__remove-btn">
+                                                            <i class="cart-item__remove-icon fa-solid fa-trash-can"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+        
+                                        </div>
+                                        <h3 class="cart-footer">
+                                            <p class="cart-footer__title">Tổng:</p>
+                                            <span class="cart__total-count">0</span>
+                                        </h3>
+                                        <a href="../pages/checkout.html" class="cart__order-btn">Gửi đơn hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Home Container -->
         <section id="Home-container">
@@ -170,7 +279,253 @@
         </section>
 
         <!-- Footer -->
-        <section id="footer"></section>
+        <footer class="footer">
+            <div class="footer__policy">
+                <div class="grid">
+                    <div class="policy">
+                        <div class="grid__column-4">
+                            <div class="policy__heading">
+                                <i class="policy__heading-icon fa-regular fa-paper-plane"></i>
+                                <div class="policy__heading-wrap">
+                                    <div class="policy__heading-label">Thanh toán và giao hàng</div>
+                                    <div class="policy__heading-separate"></div>
+                                </div>
+                            </div>
+                            <div class="policy__heading-body">
+                                <p> Miễn phí vận chuyển cho đơn hàng trên 399.000 VNĐ <br>
+                                    - Giao hàng và thu tiền tận nơi <br>
+                                    - Chuyển khoản và giao hàng <br>
+                                    - Mua hàng tại shop
+                                </p>
+                            </div>
+                        </div>
+            
+                        <div class="grid__column-4">
+                            <div class="policy__heading">
+                                <i class="policy__heading-icon fa-regular fa-credit-card"></i>
+                                <div class="policy__heading-wrap">
+                                    <div class="policy__heading-label">Thẻ thành viên</div>
+                                    <div class="policy__heading-separate"></div>
+                                </div>
+                            </div>
+                            <div class="policy__heading-body">
+                                <p> Chế độ ưu đãi thành viên VIP: 
+                                    <br>- 5% cho thành viên Bạc 
+                                    <br>- 10% cho thành viên Vàng 
+                                    <br>- 15% cho thành viên Kim cương
+                                </p>
+                            </div>
+                        </div>
+            
+                        <div class="grid__column-4">
+                            <div class="policy__heading">
+                                <i class="policy__heading-icon fa-regular fa-clock"></i>
+                                <div class="policy__heading-wrap">
+                                    <div class="policy__heading-label">Giờ mở cửa</div>
+                                    <div class="policy__heading-separate"></div>
+                                </div>
+                            </div>
+                            <div class="policy__heading-body">
+                                <p> <strong>8h30 đến 22:00</strong>
+                                    <br>- Tất cả các ngày trong tuần
+                                    <br>- Áp dụng cho tất cả các chi nhánh hệ thống cửa hàng TAGLUXE
+                                </p>
+                            </div>
+                        </div>     
+                        
+                        <div class="grid__column-4">
+                            <div class="policy__heading">
+                                <i class="policy__heading-icon fa-solid fa-headphones-simple"></i>
+                                <div class="policy__heading-wrap">
+                                    <div class="policy__heading-label">Hỗ trợ 24/7</div>
+                                    <div class="policy__heading-separate"></div>
+                                </div>
+                            </div>
+                            <div class="policy__heading-body">
+                                <p> Gọi ngay cho chúng tôi khi bạn có thắc mắc
+                                    <br>- 0905.450.533
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__first">
+                <div class="grid">
+                    <div class="first">
+                        <div class="grid__column-4">
+                            <div class="first__logo">
+                                <img src="../assets/css/img/logo.jpg" alt="" class="first__logo-img">
+                            </div>
+            
+                            <ul class="first__list">
+                                <li class="first__list-item">
+                                    <i class="first__list-icon fa-solid fa-angles-right"></i>
+                                    <a href="" class="first__list-item-label">Giới thiệu</a>
+                                </li>
+                                <li class="first__list-item">
+                                    <i class="first__list-icon fa-solid fa-angles-right"></i>
+                                    <a href="" class="first__list-item-label">Liên hệ</a>
+                                </li>
+                                <li class="first__list-item">
+                                    <i class="first__list-icon fa-solid fa-angles-right"></i>
+                                    <a href="" class="first__list-item-label">Tuyển dụng</a>
+                                </li>
+                                <li class="first__list-item">
+                                    <i class="first__list-icon fa-solid fa-angles-right"></i>
+                                    <a href="" class="first__list-item-label">Tin tức</a>
+                                </li>
+                            </ul>
+                            <ul class="first__hotline-list">
+                                <li class="first__list-item first__hotline-list-item">
+                                    <i class="first__hotline-list-icon fa-regular fa-envelope"></i>
+                                    Email:  
+                                    <a href="" class="first__hotline-link">
+                                        abc@gmail.com
+                                    </a>
+                                </li>
+                                <li class="first__list-item first__hotline-list-item">
+                                    <i class="first__hotline-list-icon fa-solid fa-phone"></i>
+                                    Hotline:
+                                    <a href="" class="first__hotline-link">
+                                        0336.797.748
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="grid__column-4">
+                            <h3 class="first__heading">Hỗ trợ khách hàng</h3>
+                            <ul class="first__list">
+                                <li class="first__list-item">
+                                    <i class="first__list-icon fa-solid fa-angles-right"></i>
+                                    <a href="" class="first__list-item-label">Hướng dẫn đặt hàng</a>
+                                </li>
+                                <li class="first__list-item">
+                                    <i class="first__list-icon fa-solid fa-angles-right"></i>
+                                    <a href="" class="first__list-item-label">Hướng dẫn chọn size</a>
+                                </li>
+                                <li class="first__list-item">
+                                    <i class="first__list-icon fa-solid fa-angles-right"></i>
+                                    <a href="" class="first__list-item-label">Câu hỏi thường gặp</a>
+                                </li>
+                                <li class="first__list-item">
+                                    <i class="first__list-icon fa-solid fa-angles-right"></i>
+                                    <a href="" class="first__list-item-label">Chính sách khách VIP</a>
+                                </li>
+                                <li class="first__list-item">
+                                    <i class="first__list-icon fa-solid fa-angles-right"></i>
+                                    <a href="" class="first__list-item-label">Thanh toán - Giao hàng</a>
+                                </li>
+                                <li class="first__list-item">
+                                    <i class="first__list-icon fa-solid fa-angles-right"></i>
+                                    <a href="" class="first__list-item-label">Chính sách đổi hàng</a>
+                                </li>
+                                <li class="first__list-item">
+                                    <i class="first__list-icon fa-solid fa-angles-right"></i>
+                                    <a href="" class="first__list-item-label">Chính sách bảo mật</a>
+                                </li>
+                                <li class="first__list-item">
+                                    <i class="first__list-icon fa-solid fa-angles-right"></i>
+                                    <a href="" class="first__list-item-label">Chính sách Cookie</a>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="grid__column-4">
+                            <h3 class="first__heading">Hệ thống cửa hàng</h3>
+                            <a href="" class="first__map-link">
+                                <img src="https://4menshop.com/images/footer-map.jpg" alt="" class="first__map-img">
+                            </a>
+                            <li class="first__list-item">
+                                <i class="first__list-icon fa-solid fa-angles-right"></i>
+                                <a href="" class="first__list-item-label">Tìm địa chỉ cửa hàng gần bạn</a>
+                            </li>
+                        </div>
+            
+                        <div class="grid__column-4">
+                            <h3 class="first__heading">Kết nối với TAGLUXE</h3>
+                            <a href="" class="first__connect-page">
+                                <div class="first__connect-wrap">
+                                    <img src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/476741422_122128394774590599_5529599199091243589_n.png?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHt2jDyPs6hKDoV4HkupYXl4PxJFF9YHRvg_EkUX1gdGx4BUxGo6-BHKy_rv9UjhHl48bBvHsvGQs7ViRiChnSc&_nc_ohc=sDQeQ4_WHnwQ7kNvgEc9e5T&_nc_oc=Adhc9U3X3Qhq_H_YhjYITdVdPpt4ahCCAdw737eJI-aJKozWdgpo1D7o-gzHETjOxOY&_nc_zt=23&_nc_ht=scontent.fsgn19-1.fna&_nc_gid=A5hDOKO9jrqVHo5w4qoAypO&oh=00_AYDdBmB9e8sR3-WTcCkesex2OcEvO6XYDhg2CAHTcFLGEQ&oe=67B65938" alt="" class="first__bg-connect-img">
+                                    <div class="first__connect-heading">
+                                        <img src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-1/474873610_122125776524590599_3484904638591452484_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeERaa0N4Uqo66iqWLbbt4NXxxwmJLQH_uDHHCYktAf-4Astm83iwOO5T9X5kWbKJnnMdJu1xNmbIs-baYR7Z0rP&_nc_ohc=VqGuO81uOvsQ7kNvgHEeX_3&_nc_oc=Adjd96-VZlhzi4MiegqcVlr-w1A6FxpAX1dN0_P-beFXKTowzy0quozDFkoShhIq3q4&_nc_zt=24&_nc_ht=scontent.fsgn19-1.fna&_nc_gid=A5hDOKO9jrqVHo5w4qoAypO&oh=00_AYAl4Bp8U_sxKi5GvaH9riDqgI7pyb9Ok9Sxo1iff_mcdQ&oe=67B65547" alt="" class="first__connect-img">
+                                        <div class="first__connect-label">
+                                            <div class="first__connect-name">TAGLUXE</div>
+                                            <div class="first__connect-followers">258.543 người theo dõi</div>
+                                        </div>
+                                    </div>
+                                    <button class="first__connect-follow-btn">
+                                        <i class="first__connect-follow-icon fa-brands fa-square-facebook"></i>
+                                        Theo dõi trang
+                                    </button>
+                                </div>
+                            </a>
+                            <ul class="first__social-list">
+                                <li class="first__social-item">
+                                    <a href="" class="first__social-link">
+                                        <i class="first__social-icon fa-brands fa-square-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="first__social-item">
+                                    <a href="" class="first__social-link">
+                                        <i class="first__social-icon fa-brands fa-square-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="first__social-item">
+                                    <a href="" class="first__social-link">
+                                        <i class="first__social-icon fa-brands fa-square-youtube"></i>
+                                    </a>
+                                </li>
+                                <li class="first__social-item first__social-item--btn">
+                                    <a href="" class="first__social-link">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        Thích 5,8k
+                                    </a>
+                                </li>
+                                <li class="first__social-item first__social-item--btn">
+                                    <a href="" class="first__social-link">
+                                        <i class="fa-solid fa-share"></i>
+                                        Chia sẻ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <h3 class="first__email-input-label">Đăng ký nhận email khuyến mãi</h3>
+                    <div class="first__email-input-wrap">
+                        <input placeholder="Email của bạn" type="email" class="first__email-input">
+                        <button class="first__email-btn">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__second">
+                <div class="grid footer__second-wrap">
+                    <div class="width__3-4 second__left">
+                        <p class="second__copyright">
+                            Copyright 2025 · Thiết kế và phát triển bởi TAGLUXE SHOP All rights reserved
+                        </p>
+                        <p class="second__owner">
+                            Chủ quản: .
+                            <br>MST cá nhân: 
+                            <br>Số ĐKKD: 
+                        </p>
+                        <p class="second__label">
+                            Nhãn hiệu "TAGLUXE" đã được đăng kí độc quyền tại Cục sở hữu trí tuệ Việt Nam
+                        </p>
+                    </div>
+                    <div class="width__1-4 second__right">
+                        <a href="" class="second__right-link">
+                            <img src="https://4menshop.com/gov.png" alt="" class="second__right-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </footer>
 
     </div>
 
