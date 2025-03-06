@@ -1,21 +1,21 @@
 // Header & Footer
 document.addEventListener("DOMContentLoaded", function () {
     // Load Topbar Header
-    fetch("../components/header__topbar.html")
+    fetch("/components/header__topbar.html")
         .then(response => response.text())
         .then(data => {
             document.querySelector("#header__topbar").innerHTML = data;
         });
 
     // Load Topbar Header
-    fetch("../components/header__sticky.html")
+    fetch("/components/header__sticky.html")
         .then(response => response.text())
         .then(data => {
             document.querySelector("#header__sticky").innerHTML = data;
         });
 
     // Load Footer
-    fetch("../components/footer.html")
+    fetch("/components/footer.html")
         .then(response => response.text())
         .then(data => {
             document.querySelector("#footer").innerHTML = data;
